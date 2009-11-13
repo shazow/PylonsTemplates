@@ -24,8 +24,8 @@ up as well.) The template generates:
 
 ### MORE DOCUMENTATION
 
-http://what.repoze.org/docs/1.x/
-http://code.gustavonarea.net/repoze.what-pylons/
+* (http://what.repoze.org/docs/1.x/)
+* (http://code.gustavonarea.net/repoze.what-pylons/)
 
 ### QUICK EXAMPLE OF REPOZE.WHAT-PYLONS USAGE
 
