@@ -1,12 +1,13 @@
-PylonsTemplates gives you additional paster templates for Pylons applications.
+# PylonsTemplates
+
+*PylonsTemplates gives you additional paster templates for Pylons applications.*
 
 Once the PylonsTemplates module is installed, you can create new Pylons
 projects like this:
 
     paster create -t <templatename> <projectname>
 
-pylons_repoze_what
-------------------
+## pylons_repoze_what
 
 Based on the default Pylons paster template, the pylons_repoze_what template
 implements a working authorization system based on repoze.what and
@@ -21,30 +22,28 @@ up as well.) The template generates:
 * Commented out sample code in websetup.py that creates a user, group,
   and permission.
 
-MORE DOCUMENTATION
+### MORE DOCUMENTATION
 
 http://what.repoze.org/docs/1.x/
 http://code.gustavonarea.net/repoze.what-pylons/
 
+### QUICK EXAMPLE OF REPOZE.WHAT-PYLONS USAGE
 
-QUICK EXAMPLE OF REPOZE.WHAT-PYLONS USAGE
+    from repoze.what.predicates import has_permission
+    from repoze.what.plugins.pylonshq import ActionProtector
 
-from repoze.what.predicates import has_permission
-from repoze.what.plugins.pylonshq import ActionProtector
-
-class HelloWorldController(BaseController):
-    @ActionProtector(has_permission('be_cool'))
-    def index(self):
-        return 'Hello World'
+    class HelloWorldController(BaseController):
+        @ActionProtector(has_permission('be_cool'))
+        def index(self):
+            return 'Hello World'
 
 
-pylons_cleaner_default
-----------------------
+## pylons_cleaner_default
 
 Based on the default Pylons paster template, but contains some refactored
 imports and additional example cases.
 
-For SQLAlchemy
+For SQLAlchemy:
+
 * Import Session object directly, instead of accessing it through meta.Session
 * Declarative object definition example
-
