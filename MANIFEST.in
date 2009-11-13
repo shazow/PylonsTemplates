@@ -1,1 +1,2 @@
 recursive-include PylonsTemplates/pylons_repoze_what *
+recursive-include PylonsTemplates/pylons_cleaner_default *
