@@ -1,5 +1,4 @@
 PylonsTemplates gives you additional paster templates for Pylons applications.
-(Right now, there is one.)
 
 Once the PylonsTemplates module is installed, you can create new Pylons
 projects like this:
@@ -22,7 +21,6 @@ up as well.) The template generates:
 * Commented out sample code in websetup.py that creates a user, group,
   and permission.
 
-
 MORE DOCUMENTATION
 
 http://what.repoze.org/docs/1.x/
@@ -38,3 +36,15 @@ class HelloWorldController(BaseController):
     @ActionProtector(has_permission('be_cool'))
     def index(self):
         return 'Hello World'
+
+
+pylons_cleaner_default
+----------------------
+
+Based on the default Pylons paster template, but contains some refactored
+imports and additional example cases.
+
+For SQLAlchemy
+* Import Session object directly, instead of accessing it through meta.Session
+* Declarative object definition example
+
