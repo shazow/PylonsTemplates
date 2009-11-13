@@ -51,3 +51,29 @@ For SQLAlchemy:
 
 * Import Session object directly, instead of accessing it through meta.Session
 * Declarative object definition example
+
+### QUICK EXAMPLES
+
+One option...
+
+    from myproject.model import Session, Foo
+
+    class MyController(BaseController):
+        def index(self):
+            return Session.query(Foo).all()
+
+More reasonable...
+
+    from myproject import model
+    Session = model.Session # Optional (if you don't like typing model.Session)
+    engine = Session.bind # Optional (if you need the engine)
+
+    ## Instead of:
+    # from myproject.model import meta
+    # Session = meta.Session
+
+    class MyController(BaseController):
+        def index(self):
+            return Session.query(model.Foo).all()
+
+Also works in `paster shell` and unit tests!
