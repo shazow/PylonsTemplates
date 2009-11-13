@@ -9,6 +9,8 @@ projects like this:
 
 ## pylons_repoze_what
 
+By [countergram (Jason Stitt)](http://github.com/countergram)
+
 Based on the default Pylons paster template, the pylons_repoze_what template
 implements a working authorization system based on repoze.what and
 repoze.what-quickstart. (Authentication by repoze.who is automatically set
@@ -39,6 +41,8 @@ up as well.) The template generates:
 
 
 ## pylons_cleaner_default
+
+By [shazow (Andrey Petrov)](http://github.com/shazow)
 
 Based on the default Pylons paster template, but contains some refactored
 imports and additional example cases.
