@@ -38,5 +38,6 @@ setup(name='PylonsTemplates',
       [paste.paster_create_template]
       pylons_repoze_what = PylonsTemplates:PylonsRepozeWhat
       pylons_cleaner_default = PylonsTemplates:PylonsCleanerDefault
+      pylons_dotcloud = PylonsTemplates:PylonsDotCloud
       """,
       )
