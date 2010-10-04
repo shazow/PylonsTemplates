@@ -1,0 +1,7 @@
+host: {{ dotcloud_host }}
+port: {{ dotcloud_port }}
+scm: filebased
+
+requirements:
+    - Pylons
+    - SQLAlchemy
